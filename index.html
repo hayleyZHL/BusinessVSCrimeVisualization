@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="./styles.css" />
   <title>INFO 5100 Project 3</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://d3js.org/topojson.v3.min.js"></script>
@@ -440,7 +441,7 @@
         d3.selectAll('.times')
                 .attr('opacity', 0)
         d3.select(this)
-                .transition().duration(00)
+                .transition().duration()
                 .attr("width", xScaleBar.bandwidth()+3)
                 .style('opacity', 0.6)
 
